@@ -1,0 +1,67 @@
+$background_color: #444;
+$white_color: text($background_color);
+$secondary_color: #eeca1e;
+$secondary_text: #c0d8f3;
+$background_img: url('../img/pexels-photo-265087.jpeg');
+$show_background: true;
+$opacity: 0.9;
+@mixin trans {
+  transition: all 0.5s ease-out;
+}
+@mixin background {
+  @if $show_background {
+    &#bg-img {
+      background: $background_img;
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($background_color, $opacity);
+        z-index: -1;
+      }
+    }
+  }
+}
+
+// set Text
+@function text($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Mixin for the query selector
+@mixin mediaXs {
+  @media screen and (max-width: 250px) {
+    @content;
+  }
+}
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}

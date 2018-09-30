@@ -71,7 +71,7 @@
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url("../../img/rsz_ut.jpg") no-repeat;
+  background: url("../img/rsz_ut.jpg") no-repeat;
   background-size: cover;
   border-radius: 50%;
   border: 3px solid #eeca1e;
@@ -133,7 +133,7 @@ body {
   line-height: 1.5;
 }
 body#bg-img {
-  background: url("../../img/pexels-photo-265087.jpeg");
+  background: url("../img/pexels-photo-265087.jpeg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -385,7 +385,7 @@ div.menu-branding.show {
     transform: translate3d(-100%, 0, 0);
   }
   .menu-branding .portrait {
-    background: url("../../img/rsz_ut.jpg") no-repeat;
+    background: url("../img/rsz_ut.jpg") no-repeat;
     background-size: cover;
     width: 150px;
     height: 150px;
@@ -398,10 +398,6 @@ div.menu-branding.show {
 
   .projects {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .contact-lg {
-    font-size: 4rem !important;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1170px) {
