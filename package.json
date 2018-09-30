@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage":"https://github.com/utkarsh4321/sass-portfolio",
+  "homepage":"https://utkarsh4321.github.io/sass-portfolio",
   "scripts": {
     "start": "sass --watch ./scss:./dist/css",
     "deploy":"gh-pages -d dist"
