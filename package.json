@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage":"https://utkarsh4321.github.io/sass-portfolio",
+  "homepage": "https://utkarsh4321.github.io/sass-portfolio",
   "scripts": {
-    "start": "sass --watch ./scss:./dist/css",
-    "deploy":"gh-pages -d dist"
+    "start": "sass --watch ./dist/scss:./dist/css",
+    "deploy": "gh-pages -d dist"
   },
   "author": "utkarsh",
   "license": "MIT",

@@ -1,13 +1,15 @@
 $background_color: #444;
 $white_color: text($background_color);
-$secondary_color: #eeca1e;
+$secondary_color: rgb(230, 233, 56);
 $secondary_text: #c0d8f3;
 $background_img: url('../img/pexels-photo-265087.jpeg');
 $show_background: true;
 $opacity: 0.9;
+
 @mixin trans {
   transition: all 0.5s ease-out;
 }
+
 @mixin background {
   @if $show_background {
     &#bg-img {
@@ -15,6 +17,7 @@ $opacity: 0.9;
       background-size: cover;
       background-attachment: fixed;
       background-repeat: no-repeat;
+
       &::after {
         content: '';
         position: absolute;
@@ -33,7 +36,9 @@ $opacity: 0.9;
 @function text($color) {
   @if (lightness($color) > 40) {
     @return #000;
-  } @else {
+  }
+
+  @else {
     @return #fff;
   }
 }
@@ -44,6 +49,7 @@ $opacity: 0.9;
     @content;
   }
 }
+
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
     @content;
@@ -55,11 +61,13 @@ $opacity: 0.9;
     @content;
   }
 }
+
 @mixin mediaLg {
   @media screen and (min-width: 769px) and (max-width: 1170px) {
     @content;
   }
 }
+
 @mixin mediaXl {
   @media screen and (min-width: 1171px) {
     @content;
