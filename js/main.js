@@ -3,10 +3,12 @@ const sel = document.querySelector('.menu-btn'),
   menu = document.querySelector('.menu'),
   menuBranding = document.querySelector('.menu-branding'),
   navItems = document.querySelectorAll('.list-item'),
-  menuNav = document.querySelector('.menu-nav');
+  menuNav = document.querySelector('.menu-nav'),
+  contactMe = document.querySelector('#web');
 
 let showMenu = false;
 sel.addEventListener('click', showMenuEver);
+
 function showMenuEver(e) {
   if (!showMenu) {
     sel.classList.add('close');
@@ -31,3 +33,10 @@ function showMenuEver(e) {
 
   e.preventDefault();
 }
+
+// ADD Event Listerner
+contactMe.addEventListener('click', (e) => {
+
+  window.open('http://utcom.tk', '_blank');
+  e.preventDefault();
+});
