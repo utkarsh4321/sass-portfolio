@@ -74,7 +74,7 @@
   background: url("../img/rsz_ut.jpg") no-repeat;
   background-size: cover;
   border-radius: 50%;
-  border: 3px solid #e6e938;
+  border: 3px solid #dde938;
 }
 .menu .list-item {
   transform: translate3d(600px, 0, 0);
@@ -86,7 +86,7 @@
   overflow: hidden;
 }
 .menu .list-item.current > a {
-  color: #e6e938;
+  color: #dde938;
 }
 .menu .list-link {
   display: inline-block;
@@ -100,7 +100,7 @@
   transition: all 0.5s ease-out;
 }
 .menu .list-link:hover {
-  color: #e6e938;
+  color: #dde938;
   transition: all 0.5s ease-out;
 }
 
@@ -174,7 +174,7 @@ a {
   color: #fff;
 }
 a:hover {
-  color: #e6e938;
+  color: #dde938;
   transition: all 0.5s ease-out;
 }
 
@@ -185,7 +185,7 @@ header {
 }
 
 .text-secondary {
-  color: #e6e938;
+  color: #dde938;
 }
 
 main {
@@ -199,7 +199,7 @@ main .icon a {
   padding: 0.4rem;
 }
 main .icon a:hover {
-  color: #e6e938;
+  color: #dde938;
   transition: all 0.5s ease-out;
 }
 main#home {
@@ -221,7 +221,7 @@ main#home h1 {
   width: 20rem;
   margin: auto;
   border-radius: 50%;
-  border: #e6e938 3px solid;
+  border: #dde938 3px solid;
 }
 
 .bio {
@@ -248,14 +248,19 @@ main#home h1 {
   text-align: left;
 }
 
-.about-sm, .about-lg, .work-lg, .work-sm, .contact-lg, .contact-sm {
+.about-sm,
+.about-lg,
+.work-lg,
+.work-sm,
+.contact-lg,
+.contact-sm {
   text-align: left;
 }
 
 .job {
   background: #515151;
   padding: 0.5rem;
-  border-bottom: #e6e938 5px solid;
+  border-bottom: #dde938 5px solid;
 }
 
 #main-footer {
@@ -277,7 +282,7 @@ main#home h1 {
 }
 .projects img:hover {
   opacity: 0.5;
-  border-color: #e6e938;
+  border-color: #dde938;
   transition: all 0.5s ease-out;
 }
 
@@ -297,7 +302,7 @@ main#home h1 {
 }
 .boxes div:hover {
   padding: 0.5rem 1.5rem;
-  background: #e6e938;
+  background: #dde938;
   color: #000;
 }
 .boxes div:hover span {
@@ -311,7 +316,7 @@ main#home h1 {
   margin-bottom: 0.3rem;
 }
 .btn:hover, .btn-light:hover, .btn-dark:hover {
-  background: #e6e938;
+  background: #dde938;
   color: #fff;
 }
 
